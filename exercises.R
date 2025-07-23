@@ -1,6 +1,5 @@
 # load
 
-
 load(url("https://bit.ly/44UDUFG"))
 
 # Exercise 1: Write a program to map proper formats for CMSTDTC and CMENDTC from raw CM dataset. 
@@ -22,9 +21,12 @@ load(url("https://bit.ly/44UDUFG"))
 # Plan the mapping of these into cm_mapping.xlsx excel file
 
 
+
+
 # Exercise 5: Compare the mapping you proposed for exercise 4 with the mapping file given by Binod.
 
 
 # 
-# Exercise 6. After completing the comparison, create CM and SUPPCM datasets with a single cm.sas program. After that, validate the CM & SUPPCM datasets with provided dataset (will be available in SDTM folder upon request). Finally, save your program.  
+# Exercise 6. After completing the comparison, create a single cm.R program to create CM and SUPPCM . 
+# After that, validate the CM & SUPPCM datasets with provided dataset (upon request). 
 # 
