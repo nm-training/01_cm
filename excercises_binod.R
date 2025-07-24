@@ -37,7 +37,13 @@ raw_ex1 <- raw_cm |>
 
 # Exercise 2: Write a program to create Unique Subject Identifier variable and Sequence variable.
 
-
+raw_ex1 <- raw_cm |>
+  USUBJID = str_c("TRA-025", SUBJECT,sep = "-") |>
+  arrange(STUDYID, USUBJID, CMTRT, CMSTDTC) |>
+  group_by(USUBJID) |>
+  mutate(CMSEQ = row_number()) |>
+  ungroup()
+  
 
 # Exercise 3: Write a program to calculate Study Day variable. (CMSTDTC, CMENDTC)
 
@@ -60,6 +66,7 @@ raw_ex3 <- raw_ex1 |>
 # Exercise 4: Take the concomitant medication data.
 # The sample source data also has ATC coded variables for the medication names.
 # Plan the mapping of these into cm_mapping.xlsx excel file
+
 
 
 
