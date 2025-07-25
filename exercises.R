@@ -1,3 +1,6 @@
+# R Trainer: Binod Jung Bogati (linkedin.com/in/bjungbogati)
+# copyright: © 2025. Unauthorized distribution or reuse prohibited.
+
 # load
 
 load(url("https://bit.ly/44UDUFG"))
